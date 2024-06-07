@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    /* Colors Primary */
+    --Red: hsl(1, 90%, 64%);
+    --Blue: hsl(219, 85%, 26%);
+    /*  Neutral */
+    --White: hsl(0, 0%, 100%);
+    --Very-light-grayish-blue: hsl(210, 60%, 98%);
+    --Light-grayish-blue-1: hsl(211, 68%, 94%);
+    --Light-grayish-blue-2: hsl(205, 33%, 90%);
+    --Grayish-blue: hsl(219, 14%, 63%);
+    --Dark-grayish-blue: hsl(219, 12%, 42%);
+    --Verydark-blue: hsl(224, 21%, 14%);
+}
+body {
+    height: 100%;
+    background-color: var(--Light-grayish-blue-1);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.container {
+    width: 50%;
+    display: flex;
+    background-color: var(--White);
+    flex-direction: column;
+    margin: auto 0px;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px var(--Dark-grayish-blue);
+}
+.logos{
+    width: 10px;
+    height: 10px;
+    background-color: var(--Red);
+    border-radius: 50%;
+}
+@media screen and (max-width:1000px) {
+    .container {
+        width: 100%;
+        padding: 5px;
+        border-radius: 0px;
+        box-shadow: 0px 0px 0px 0px var(--Dark-grayish-blue);
+    }
+}
+
+.container>.nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 35px;
+}
+
+.container>.nav>.inner>p {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    font-weight: 800;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container>.nav>.inner>p>span {
+    height: 20px;
+    width: 30px;
+    padding: 0px 3px;
+    margin: 0px 5px;
+    border-radius: 5px;
+    background-color: var(--Blue);
+    font-size: 12px;
+    color: var(--White);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container>.nav>.nav_text {
+    font-size: 12px;
+    color: var(--Blue);
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+.container>.nav>.nav_text:hover{
+    color: var(--Verydark-blue);
+}
+.container>.main>.img,
+.container>.main1>.main>.img,
+.container>.main1>.img,
+.container>.m_main>.inside>.img {
+    width: 30px;
+    height: 30px;
+    margin: 0px 10px;
+}
+.container>.main {
+    display: flex;
+    align-items: center;
+    margin: 5px 0px;
+    border-radius: 5px;
+    height: 50px;
+    padding: 10px;
+}
+.UnRead_Notification {
+    background-color: var(--Very-light-grayish-blue);
+    margin: 5px 0px;
+    border-radius: 5px;
+}
+.container>.main>p>.text {
+
+    font-size: 12px;
+}
+
+
+.container>.main>p>.text>.logo {
+    width: 10px;
+    height: 10px;
+    background-color: var(--Red);
+}
+
+.container>.m_main {
+    display: flex;
+    padding: 10px;
+}
+
+.container>.m_main>.outside {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container>.m_main>.outside>p {
+    display: grid;
+    grid-template-columns: 1, auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container>.main1>.main>p>.text>.name,
+.container>.main>p>.text>.name,
+.container>.m_main>.outside>p>.text>.name{
+    font-size: 12px;
+    font-weight: 800;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container>.main>p>.text>.post{
+    color: var(--Dark-grayish-blue);
+    font-size: 12px;
+    font-weight: 800;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.container>.m_main>.outside>.outside_inner {
+    margin: 10px 0px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--Grayish-blue);
+}
+
+.container>.m_main>.outside>.outside_inner>.reaction,
+.container>.m_main>.outside>p>.text>.reaction,
+.container>.m_main>.outside>p>.time,
+.container>.main>p>.text>.reaction,
+.container>.main>p>.time,
+.container>.main1>.main>p>.text>.reaction,
+.container>.main1>.main>p>.time{
+    color: var(--Grayish-blue);
+}
+
+.group {
+    font-weight: 800;
+    font-size: 12px;
+    color: var(--Blue);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container>.main1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.container>.main1>.main {
+    display: flex;
+}
+
+.container>.main>p,
+.container>.main1>.main>p{
+    display: grid;
+    grid-template-columns: 1, auto;
+}
